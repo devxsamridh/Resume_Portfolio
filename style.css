@@ -674,11 +674,25 @@ footer span { color: #00abf0; }
 
   /* Header */
   .header {
-    padding: 16px 5%;
+    padding: 12px 4%;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+  .logo {
+    font-size: 18px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0;
   }
   .navbar a {
-    font-size: 14px;
-    margin-left: 18px;
+    font-size: 12px;
+    margin-left: 10px;
+    white-space: nowrap;
   }
 
   /* HOME — portrait stacked layout */
@@ -796,10 +810,11 @@ footer span { color: #00abf0; }
 
 /* ===== SMALL MOBILE (max 480px) ===== */
 @media (max-width: 480px) {
-  .header { padding: 14px 4%; }
+  .header { padding: 10px 3%; gap: 6px; }
+  .logo { font-size: 16px; }
   .navbar a {
-    font-size: 12px;
-    margin-left: 12px;
+    font-size: 11px;
+    margin-left: 8px;
   }
   .home { padding: 90px 4% 90px; }
   .home-img { width: 150px; height: 200px; }
